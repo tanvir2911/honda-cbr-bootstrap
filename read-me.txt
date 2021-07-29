@@ -1,0 +1,37 @@
+head:
+    favicon
+    bootstrap-link
+    custom-css-link
+
+
+header:
+    navbar
+        transition to navabr
+    offcanvas:
+        transition to offcanvas
+
+    button
+        modal to button
+
+    
+main
+    featured-section
+        img
+            grayscale-image
+
+    happy-clien-section
+        icons
+            svg icons from bootstrap library   
+
+        img
+            3rd image resized
+
+    faq-section
+        accordion
+
+    cruiser-section
+        carousel
+
+    subscribe-section
+        forms
+            modal to subscribe button

@@ -44,26 +44,91 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <li class="nav-item navbar-transformation">
+
+                                <!-- offcanvas button -->
+                                <button class="btn text-white " type="button" data-bs-toggle="offcanvas"
+                                    data-bs-target="#offcanvasScrolling"
+                                    aria-controls="offcanvasScrolling">Home</button>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item navbar-transformation">
                                 <a class="nav-link active" aria-current="page" href="#featured-bikes">Featured
                                     Bikes</a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item navbar-transformation">
                                 <a class="nav-link active" aria-current="page" href="#happy-clients">Feedback</a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item navbar-transformation">
                                 <a class="nav-link active" aria-current="page" href="#faq">FAQ</a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item navbar-transformation">
                                 <a class="nav-link active" aria-current="page" href="#cruisers">Cruisers</a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item navbar-transformation">
                                 <a class="nav-link active" aria-current="page" href="#subscribe">Subscribe</a>
                             </li>
                         </ul>
+
+
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- offcanvas viewport -->
+            <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+                id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+                <div class="offcanvas-header bg-dark">
+                    <!-- <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Colored with scrolling
+                    </h5> -->
+
+                    <div class="transformation offcanvas-transformation">
+
+                        <a class="navbar-brand" href="#">
+                            <img src="images/icon-bike.svg" class=" d-inline-block align-text-top">
+                            Honda
+                        </a>
+
+                    </div>
+
+                    <button type="button" class="btn-close text-reset bg-light " data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body bg-success">
+                    <div>
+                        <button class=" navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex flex-column">
+                                <li class="nav-item offcanvas-transformation">
+
+                                    <!-- offcanvas button -->
+                                    <button class="btn text-white" type="button" data-bs-toggle="offcanvas"
+                                        data-bs-target="#offcanvasScrolling"
+                                        aria-controls="offcanvasScrolling">Home</button>
+                                </li>
+                                <li class="nav-item offcanvas-transformation">
+                                    <a class="nav-link active" aria-current="page" href="#featured-bikes">Featured
+                                        Bikes</a>
+                                </li>
+                                <li class="nav-item offcanvas-transformation">
+                                    <a class="nav-link active" aria-current="page" href="#happy-clients">Feedback</a>
+                                </li>
+                                <li class="nav-item offcanvas-transformation">
+                                    <a class="nav-link active" aria-current="page" href="#faq">FAQ</a>
+                                </li>
+                                <li class="nav-item offcanvas-transformation">
+                                    <a class="nav-link active" aria-current="page" href="#cruisers">Cruisers</a>
+                                </li>
+                                <li class="nav-item offcanvas-transformation">
+                                    <a class="nav-link active" aria-current="page" href="#subscribe">Subscribe</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -89,9 +154,10 @@
                 <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
                     tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered ">
-                        <div class="modal-content">
+                        <div class="modal-content ">
                             <div class="modal-header">
-                                <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                                <h5 class="modal-title text-dark" id="staticBackdropLabel">Honda CBR 300R
+                                </h5>
                                 <button type="button" class="btn-close " data-bs-dismiss="modal"
                                     aria-label="Close"></button>
                             </div>
@@ -426,12 +492,12 @@
                         <div class="accordion-item mb-3">
                             <h2 class="accordion-header" id="headingThree">
                                 <button class="accordion-button collapsed fw-bolder" type="button"
-                                    data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
-                                    aria-controls="collapseThree">
+                                    data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
+                                    aria-controls="collapseFour">
                                     What rules should I follow when riding my bike?
                                 </button>
                             </h2>
-                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body text-secondary">
                                     My 3 rules.
@@ -576,8 +642,8 @@
                                 aria-hidden="true">
                                 <div class="modal-dialog modal-dialog-centered ">
                                     <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title text-secondary" id="staticBackdropLabel">Thank You
+                                        <div class="modal-header bg-success">
+                                            <h5 class="modal-title text-light" id="staticBackdropLabel">Thank You
                                                 for
                                                 subscribing!!!</h5>
                                             <button type="button" class="btn-close " data-bs-dismiss="modal"

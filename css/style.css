@@ -7,9 +7,14 @@ transform: scale(1.5);
 transition: transform 2s;
 }
 
-nav ul li:hover{
+.navbar-transformation:hover{
     transform: rotate(20deg);
-transition:transform 2s ;
+    transition:transform 2s ;
+}
+
+.offcanvas-transformation:hover{
+    transform: translate(100px);
+    transition: transform 2s;
 }
 
 #header-bg-color{

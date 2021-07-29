@@ -1,0 +1,26 @@
+.honda-font{
+    font-family: 'Poppins', sans-serif;
+}
+
+#header-bg-color{
+    background-color: #264653;
+}
+
+#btn-pinky-color{
+    background-color: #E76F51;
+}
+
+.color-pinky-type{
+    color: #E76F51;
+}
+
+.honda-gray{
+    filter: grayscale(100%);
+  }
+
+#image-circle{
+    width: 194px;
+height: 194px;
+border-radius: 50%;
+border: 1px solid rgba(143, 137, 137);
+}

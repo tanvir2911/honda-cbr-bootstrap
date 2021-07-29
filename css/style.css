@@ -2,6 +2,16 @@
     font-family: 'Poppins', sans-serif;
 }
 
+.transformation:hover{
+transform: scale(1.5);
+transition: transform 2s;
+}
+
+nav ul li:hover{
+    transform: rotate(20deg);
+transition:transform 2s ;
+}
+
 #header-bg-color{
     background-color: #264653;
 }

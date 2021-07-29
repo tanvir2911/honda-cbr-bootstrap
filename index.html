@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    <!-- favicon link -->
+    <link rel="icon" type="image/svg" href="images/icon-bike.svg">
+
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,6 +25,51 @@
 
 <body class="honda-font">
     <header id="header-bg-color" class="text-white">
+        <!-- navigation bar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark  ">
+            <div class="container p-0 ">
+
+                <div class="transformation">
+                    <a class="navbar-brand" href="#">
+                        <img src="images/icon-bike.svg" class=" d-inline-block align-text-top">
+                        Honda
+                    </a>
+
+                </div>
+                <div>
+                    <button class=" navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#featured-bikes">Featured
+                                    Bikes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#happy-clients">Feedback</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#faq">FAQ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#cruisers">Cruisers</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#subscribe">Subscribe</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- banner section -->
         <section class="d-md-flex align-items-center p-lg-5 p-2 ">
             <div class="col col-md-6 px-lg-5  ">
                 <p class="fs-6">Computer-controlled digital transistorized with electronic advance</p>
@@ -37,7 +85,7 @@
                     Purchage
                 </button>
 
-                <!-- Modal -->
+                <!-- Modal goes here-->
                 <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
                     tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered ">
@@ -70,7 +118,7 @@
     </header>
     <main>
         <!-- Featured bikes section -->
-        <section class="container my-5 py-5">
+        <section id="featured-bikes" class="container my-5 py-5">
             <div class="row g-5
             ">
                 <div class="col-12 d-flex flex-column align-items-center">
@@ -100,7 +148,7 @@
         </section>
 
         <!-- happy client section -->
-        <section class="container my-5 py-md-5">
+        <section id="happy-clients" class="container my-5 py-md-5">
             <h2 class="text-center fw-bold  my-5"><span class="d-block d-md-inline">Happy</span> <span
                     class="color-pinky-type  d-block d-md-inline">Clients Says</span>
             </h2>
@@ -290,7 +338,7 @@
         </section>
 
         <!-- faq section -->
-        <section class="container my-5 py-md-5">
+        <section id="faq" class="container my-5 py-md-5">
             <h2 class="text-center fw-bold  my-5"><span class="d-block d-md-inline">Frequently</span> <span
                     class=" d-block d-md-inline">
                     Asked <span class="color-pinky-type  ">Questions</span>
@@ -418,7 +466,7 @@
         </section>
 
         <!-- carousel -->
-        <section class="container">
+        <section id="cruisers" class="container">
             <h2 class="text-center fw-bold  my-5"><span class="d-block d-md-inline">Explore </span> <span
                     class="color-pinky-type  d-block d-md-inline">Cruise Bikes</span>
             </h2>
@@ -465,6 +513,85 @@
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
+        </section>
+
+        <!-- subscribe -->
+        <section id="subscribe" class="container-fluid bg-light my-5">
+            <div class="container">
+                <h2 class="text-center fw-bold  my-5"><span class="d-block d-md-inline">Subscribe to Our</span> <span
+                        class="color-pinky-type  d-block d-md-inline">Newsletter</span>
+                </h2>
+                <div>
+                    <form class="row g-3">
+                        <div class="col-md-6">
+                            <label for="inputEmail4" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="inputEmail4">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputPassword4" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="inputPassword4">
+                        </div>
+                        <div class="col-12">
+                            <label for="inputAddress" class="form-label">Address</label>
+                            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                        </div>
+                        <div class="col-12">
+                            <label for="inputAddress2" class="form-label">Address 2</label>
+                            <input type="text" class="form-control" id="inputAddress2"
+                                placeholder="Apartment, studio, or floor">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputCity" class="form-label">City</label>
+                            <input type="text" class="form-control" id="inputCity">
+                        </div>
+                        <div class="col-md-4">
+                            <label for="inputState" class="form-label">State</label>
+                            <select id="inputState" class="form-select">
+                                <option selected>Choose...</option>
+                                <option>...</option>
+                            </select>
+                        </div>
+                        <div class="col-md-2">
+                            <label for="inputZip" class="form-label">Zip</label>
+                            <input type="text" class="form-control" id="inputZip">
+                        </div>
+                        <div class="col-12">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                <label class="form-check-label" for="gridCheck">
+                                    Check me out
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+
+                            <button type="button" class="btn btn-primary " data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop1">
+                                Subscribe
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static"
+                                data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered ">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title text-secondary" id="staticBackdropLabel">Thank You
+                                                for
+                                                subscribing!!!</h5>
+                                            <button type="button" class="btn-close " data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
         </section>
     </main>
     <footer>

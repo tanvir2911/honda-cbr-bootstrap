@@ -8,6 +8,7 @@ header:
     navbar
         transition to navabr
     offcanvas:
+        added to Home (click home to see offcanvas)
         transition to offcanvas
 
     button
